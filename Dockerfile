@@ -1,10 +1,12 @@
 FROM debian:bookworm AS builder
 
+RUN set -xe \
+  && apt update \
+  && apt install -y build-essential
+
 COPY . /build/
 
 RUN set -xe \
-  && apt update \
-  && apt install -y build-essential \
   && cd /build \
   && make
 
