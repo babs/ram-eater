@@ -13,4 +13,4 @@ A docker image is available at `beardedbabs/ram-eater:latest`
 
 ## License
 
-This software is dual licensed: either [WTFPL](./LICENSE) or [GLWTSPL](./LICENSE.alt) whichever suits you.
+This software is dual licensed: either [WTFPL](./LICENSE) or [GLWTSPL](./LICENSE.alt)[[source](https://github.com/me-shaon/GLWTPL)] whichever suits you.

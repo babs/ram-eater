@@ -29,13 +29,13 @@ int main(int argc, char *argv[])
     for (int i = 0; i < GB_TO_ALLOCATE * 1024; i++)
     {
         p = (int *)calloc(1, inc);
-        // Copy the random values to force allocation
-        memcpy(p, random_values_filled, inc);
         if (!p)
         {
             printf("calloc failed!\n");
-            break;
+            return 2;
         }
+        // Copy the random values to force allocation
+        memcpy(p, random_values_filled, inc);
     }
 
     printf("allocation done: %d GB.\n", GB_TO_ALLOCATE);
